@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+    <head>
+        <title>
+            Proyecto Fidesol
+        </title>
+        <link rel="stylesheet" href="plantilla.css">
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <div class="Titulo">
+        <h1>Países de todo el mundo 📌</h1>
+        <div align="center">
+            <input type="button" value="Mostrar todos los países" id="MostrarTodosLosPaises" onclick="mostrarPaises(paises)">
+        </div>
+        </div>
+        <br>
+        <div class="Filtros">
+            <th>
+            <h3 align="center"> Filtros de búsqueda:</h3>
+
+                <select id="region">
+                <option value="">--Seleccione la región-- </option>
+                <option value="Europe">Europa</option>
+                <option value="Americas">América</option>
+                <option value="Asia">Asia</option>
+                <option value="Africa">África</option>
+                <option value="Oceania">Oceanía</option>
+                <option value="Antarctic">Antártida</option>
+                </select>
+                <br><br>
+
+                <input type="text" id="país" placeholder="Nombre del país">
+                <br><br>
+
+                <input type="number" id="poblacionMinima" placeholder="poblacion min">
+                <input type="number" id="poblacionMaxima" placeholder="poblacion max">
+                <br><br>
+
+                <select id="idioma">
+                <option value="">-- Selecciona un idioma --</option>
+                </select>
+                <br><br>
+
+                <button id="Boton Buscar" onclick="filtrar()">Buscar</button>
+        </div>
+                <br><br>
+                    <div id="resultadoTarjeta"></div>
+                    <div id="error"></div>      
+    </body>
+    <script src="/script.js"></script>
+</html>
